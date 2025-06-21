@@ -100,9 +100,49 @@
 # simpleInterestCalculator()
 
 
+#Vector
 
+# namesOfPrimeMinister <- c("Liaquat Ali Khan" , "Zulfikar Ali Bhutto" , "Muhammad Khan Junejo" , "Benazir Bhutto" , "Nawaz Sharif" , "Benazir Bhutto")
+# 
+# for(a in namesOfPrimeMinister){
+#   print(a)
+# }
+# 
+# print(namesOfPrimeMinister[-2])
+# print(namesOfPrimeMinister[c(3,5)])
+# print(namesOfPrimeMinister[1:4])
+# print(namesOfPrimeMinister[c(-1,-5)])
 
+#List
 
+# movies <- list(
+#   name = "Final Destination",
+#   budget = "23 million",
+#   genre = "Horror/Fantasy",
+#   cast = c("Ali Larter,","Tony Todd,","Devon Sawa,","Kerr Smith,","Seann William Scott,","Mary Elizabeth Winstead"),
+#   available_on_ott = TRUE,
+#   verdict = "HIT"
+# )
+# 
+# 
+# cat("Movie Name Is: ", movies$name, "\nMovie Cast Are: " , movies$cast)
+# cat("\n\nMovie Name Is: ", movies$name, "\nMovie Genre Is: " , movies$genre)
+# cat("\n\nMovie Name Is: ", movies$name, "\nMovie Verdict Is: " , movies$verdict)
 
-  
-  
+#Data Frames:-
+
+# Movies_Name <- c("Inception", "The Dark Knight", "Interstellar", "Avengers: Endgame", "Joker")
+# Movies_genre <- c("Sci-Fi", "Action", "Sci-Fi", "Superhero", "Drama")
+# Movies_cast <- c("Leonardo DiCaprio", "Christian Bale", "Matthew McConaughey", "Robert Downey Jr.", "Joaquin Phoenix")
+# Movies_available_on_ott <- c(TRUE,TRUE,FALSE,TRUE,FALSE)
+# Movies_verdict <- c("Hit", "Blockbuster", "Hit", "Blockbuster", "Hit")
+# 
+# movies_details <- data.frame(
+#   Name = Movies_Name,
+#   Genre = Movies_genre,
+#   Cast = Movies_cast,
+#   Is_Available_On_OTT = Movies_available_on_ott, 
+#   Verdict = Movies_verdict
+# )
+# 
+# print(movies_details)
