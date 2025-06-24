@@ -146,3 +146,85 @@
 # )
 # 
 # print(movies_details)
+
+
+
+
+Emp_Name <- c("Ammar","Bahisht","Shahmeer","Khadija","Subhan")
+Emp_No_Of_WorkingDays <- c(30,40,50,60,70)
+Emp_No_Of_Late_Arr <- c(5,3,4,2,1)
+Emp_Dep <- c("IT","HR","IT","Finance","Operations")
+Emp_Des <- c("Software Engineer","HR Executive","Network Engineer","Accountant","Operations Manager")
+Emp_Gender <- c("M","F","M","F","M")
+Emp_Is_Permanent <- c(TRUE,FALSE,TRUE,FALSE,TRUE)
+
+
+Emp_Details <- data.frame(
+  Name = Emp_Name,
+  No_Of_WorkingDays = Emp_No_Of_WorkingDays,
+  No_Of_Late_Arr = Emp_No_Of_Late_Arr,
+  Dep = Emp_Dep,
+  Des = Emp_Des,
+  Gender = Emp_Gender,
+  Is_Permanent = Emp_Is_Permanent
+)
+
+
+print(Emp_Details)
+
+#Display all employee names and their departments.
+print(Emp_Details[,c(1,4)])
+
+#Show only permanent employees. 
+print(Emp_Details[Emp_Details$Is_Permanent == TRUE,])
+
+#Filter employees from the IT department.
+print(Emp_Details[Emp_Details$Dep == "IT",])
+
+#Find employees with more than 2 late arrivals.
+print(Emp_Details[Emp_Details$No_Of_Late_Arr > 2 , ])
+
+#Display names and designations of employees who are not permanent.
+print(Emp_Details[Emp_Details$Is_Permanent == FALSE , c(1,5)])
+
+#List of employees who had zero late arrivals.
+print(Emp_Details[Emp_Details$No_Of_Late_Arr == 0 , ])
+
+#Show records from rows 2 to 5.
+print(Emp_Details[2:5,])
+
+#Display names of employees at row positions 1,3, and 4.
+print(Emp_Details[c(1, 3, 4), 1])
+
+#Display only the Name and Department of employees from rows 1 to 3.
+print(Emp_Details[1:3, c(1,4)])
+
+#Access the designation of the employee at row 4.
+print(Emp_Details[4,5])
+
+#Access the first 3 rows using head().
+print(head(Emp_Details, n = 3))
+
+#Access the last 2 rows using tail().
+print(tail(Emp_Details, n = 2))
+
+#Get the gender of the employee in row 2.
+print(Emp_Details[2,6])
+
+#Show the 1st employee record.
+print(Emp_Details[1,])
+
+#Add a new column called City showing the city where each employee is based. 
+Emp_Details$City <- c("Karachi","Islamabad","Lahore","Multan","Quetta")
+
+
+#Add a new column Joining_Year to show the year each employee joined.
+Emp_Details$Joining_Year <- c(2015,2024,2017,2025,2022)
+
+
+
+
+
+
+
+
